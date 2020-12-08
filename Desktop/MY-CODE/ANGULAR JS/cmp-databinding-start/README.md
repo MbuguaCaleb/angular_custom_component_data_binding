@@ -3,15 +3,6 @@
 ```
 Passing data between our Components.
 
-(a)Property binding tagets partucular attributes eg the disabled.
-
-denoted by []
-
-(b)Event biding targets specific events.eg on click
-
-click=(execute method in my ts
-)
-
 By default properties are only accessible/bindable from within their
 components and so that we can bind data from parent component A to child B
 
@@ -21,8 +12,11 @@ from other components.
 @Input() element:{type:string,name:string,content:string}
 
 element property in this case is now accessible to other components.And since its an object
-it may be able to receive 
+it may be able to receive .
 
+Input is what makes an elements component property bindable from outside of the component.
+
+We may therefore as well bind to Components.
 ```
 
 **Notes By**
