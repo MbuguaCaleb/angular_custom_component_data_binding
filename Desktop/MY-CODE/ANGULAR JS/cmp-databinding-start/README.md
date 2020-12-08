@@ -36,6 +36,15 @@ srvElement now beacomes the name of the element property being binded to
 Its very similar to event binding.
 as from parent to child was similar to property binding.
 
+@Output() serverCreated =new EventEmitter<{serverName:string, serverContent:string}>();
+
+(i)Output decorator is used in a component thats passing data to another..This is inverse of input.
+
+(ii)That component is emmitting an event thus we must use an event emmiter.
+
+(iii)server created is a custom component props..that will receive the event on the parent component this passing the data.
+
+  <app-cockpit (serverCreated)="onServerAdded($event)"</app-cockpit>
 
 
 ```
