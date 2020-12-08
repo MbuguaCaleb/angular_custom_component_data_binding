@@ -14,9 +14,38 @@ from other components.
 element property in this case is now accessible to other components.And since its an object
 it may be able to receive .
 
-Input is what makes an elements component property bindable from outside of the component.
+Input is what makes an elements component property bindable from outside of the component(Parent component).
 
 We may therefore as well bind to Components.
+```
+
+**ALIAS**
+
+```
+You may assign a component property with a different name via an alias.
+
+@Input('srvElement')  element:{ type: string, name: string,  content: string};
+
+srvElement now beacomes the name of the element property being binded to
+
+```
+
+**Passing Data from Child to Parent Component**
+
+```
+Its very similar to event binding.
+as from parent to child was similar to property binding.
+
+
+
+```
+
+**TIP**
+
+```
+Assignment is after an equals sign.
+
+colon is declararing the typescript type.
 ```
 
 **Notes By**
